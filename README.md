@@ -1,8 +1,22 @@
-# React + Vite
+# Landing Page: Jetta Volkswagen 2019 🚗  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una landing page interactiva que muestra un **modelo 3D** del Jetta Volkswagen 2019 para destacar sus características principales.  
 
-Currently, two official plugins are available:
+> **⚠️ Estado del proyecto:** *En desarrollo*  
+> Este proyecto está en progreso y aún no representa una versión final.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías utilizadas  
+
+- **React Vite** 
+- **React Three** y **React Fiber**: Renderizado eficiente del modelo 3D.  
+- **GSAP**: Animaciones fluidas y sincronizadas con el scroll.  
+
+## ✨ Características  
+- **Modelo 3D interactivo**: Explora el Jetta 2019 con rotación, zoom y vistas detalladas.  
+- **Animaciones dinámicas**: Elementos animados que se activan al desplazarte por la página.  
+- **Diseño responsivo**: Adaptado para dispositivos móviles y de escritorio.  
+
+## 🚀 Instalación  
+1. Clona este repositorio:  
+   ```bash
+   git clone https://github.com/BrayanReynoso/landing-page-volkswagen-2019.git
