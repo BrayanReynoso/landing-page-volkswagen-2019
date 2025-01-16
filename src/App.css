@@ -86,7 +86,44 @@
   z-index: 99999;
 }
 
+.page--tires {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  max-width: 600px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
 
+.page--interior {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  max-width: 600px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.page--buy-info {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  max-width: 600px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
 .message--sub {
   font-family: "Roboto";
   color: #8c8c8c;
