@@ -1,5 +1,4 @@
 import { Suspense, useState } from 'react'
-
 import './App.css'
 import Scene from './components/Scene'
 import Info from './components/Info'
