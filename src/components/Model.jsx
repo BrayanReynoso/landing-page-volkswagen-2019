@@ -18,7 +18,7 @@ export function Model(props) {
     const generalGroupRef = useRef();
     const taillightRef = useRef();
     const controls = useRef();
-
+    const interiorsGroupRef = useRef();
     // Html div references
     const page_1_ref = useRef();
     const page_2_ref = useRef();
@@ -210,6 +210,59 @@ export function Model(props) {
             },
         ]
         AnimationsData = [...AnimationsData, ...TiresAnimation]
+
+        const RearLightsAnimation = [
+            // Oculta la página 4 (llantas) y muestra la página 5 (interiores)
+            {
+                objectToAnimate: page_4_ref.current,
+                properties: {
+                    opacity: 0,
+                    duration: 0.3,
+                },
+                timelinePoint: 4.1,
+            },
+            {
+                objectToAnimate: page_5_ref.current,
+                properties: {
+                    opacity: 1,
+                    duration: 0.3,
+                },
+                timelinePoint: 4.3,
+            },
+            // Foco en los interiores desde la parte trasera
+            {
+                objectToAnimate: controls.current.target,
+                properties: {
+                    x: 1.52, // Ajusta al centro del vehículo si es necesario
+                    y: 1,
+                    z: -2, // Mira hacia la parte trasera
+                    duration: 0.8,
+                },
+                timelinePoint: 4,
+            },
+            {
+                objectToAnimate: camera.position,
+                properties: {
+                    x: 0, // Centra la cámara lateralmente
+                    y: 0.5, // Altura de la cámara para coincidir con los interiores
+                    z: -7, // Coloca la cámara detrás del vehículo
+                    duration: 0.8,
+                },
+                timelinePoint: 4,
+            },
+            {
+                objectToAnimate: camera,
+                properties: {
+                    zoom: 3, // Ajusta el nivel de zoom
+                    duration: 0.8,
+                    onUpdate: () => {
+                        camera.updateProjectionMatrix();
+                    },
+                },
+                timelinePoint: 4.3,
+            },
+        ];
+        AnimationsData = [...AnimationsData, ...RearLightsAnimation]
         AnimationsData.map((animation) => {
             timeline.current.to(
                 animation.objectToAnimate,
@@ -260,6 +313,7 @@ export function Model(props) {
                         geometry={nodes['_car_body_lf_door1_car��int_1_0'].geometry}
                         material={materials.carint_1}
                         rotation={[0, Math.PI / 2, 0]}
+                        ref={interiorsGroupRef}
                     />
                     <mesh
                         name="_car_body_lf_door_2_car��int_1_0"

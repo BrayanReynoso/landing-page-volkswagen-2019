@@ -86,17 +86,16 @@
   z-index: 99999;
 }
 
-.page--tires {
+.page--rear-lights{
   position: absolute;
-  top: 50%;
-  left: 25%;
-  width: 50%;
-  max-width: 600px;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  max-width: 750px;
+  top: 10%;
+  left: 30%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 .page--interior {

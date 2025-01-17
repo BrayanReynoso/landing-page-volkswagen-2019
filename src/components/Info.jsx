@@ -36,24 +36,22 @@ export default function Info() {
                     </p>
                 </div>
 
-                <div id="page-5" class="page page--interiors page--hidden">
-                    <h1 class="message">Interiores</h1>
+                <div id="page-5" class="page page--rear-lights page--hidden">
+                    <h1 class="message">Focos traseros</h1>
                     <p class="message--sub">
-                        El interior del Volkswagen Jetta 2019 fusiona lujo y tecnología. Con asientos de alta calidad, detalles en piel y una pantalla táctil de última generación, cada viaje se convierte en una experiencia placentera y cómoda. Además, cuenta con un sistema de sonido premium y un diseño ergonómico que se adapta a las necesidades del conductor y los pasajeros.
+                        Los focos traseros del Volkswagen Jetta 2019 combinan estilo y funcionalidad. Su diseño moderno y elegante integra tecnología LED, ofreciendo una iluminación eficiente y llamativa que garantiza mayor visibilidad y seguridad en la carretera. Además, los detalles cuidadosamente diseñados complementan la estética del vehículo, haciendo que destaque tanto de día como de noche.
                     </p>
                 </div>
-
-                <div id="page-6" class="page page--purchase page--hidden">
-                    <h1 class="message">Compra el Volkswagen Jetta 2019</h1>
-                    <p class="message--sub">
-                        No esperes más para tener el Volkswagen Jetta 2019. Conoce nuestras opciones de financiamiento y realiza tu compra de forma fácil y rápida. Visita nuestro concesionario para más detalles o compra directamente en línea y haz tu sueño realidad.
-                    </p>
-                    <a href="https://www.volkswagen.com.mx" class="button">Comprar Ahora</a>
-                </div>
-
-
-
             </div>
+
+            <div id="page-6" class="page page--purchase page--hidden">
+                <h1 class="message">Compra el Volkswagen Jetta 2019</h1>
+                <p class="message--sub">
+                    No esperes más para tener el Volkswagen Jetta 2019. Conoce nuestras opciones de financiamiento y realiza tu compra de forma fácil y rápida. Visita nuestro concesionario para más detalles o compra directamente en línea y haz tu sueño realidad.
+                </p>
+                <a href="https://www.volkswagen.com.mx" class="button">Comprar Ahora</a>
+            </div>
+
         </div>
     )
 }
