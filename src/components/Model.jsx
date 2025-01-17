@@ -159,7 +159,57 @@ export function Model(props) {
             },
         ];
         AnimationsData = [...AnimationsData, ...DesaingAnimation]
-
+        const TiresAnimation = [
+            {
+                objectToAnimate: page_3_ref.current,
+                properties: {
+                    opacity: 0,
+                    duration: 0.3,
+                },
+                timelinePoint: 3.1,
+            },
+            {
+                objectToAnimate: page_4_ref.current,
+                properties: {
+                    opacity: 1,
+                    duration: 0.3,
+                },
+                timelinePoint: 3.3,
+            },
+            // Foco en las llantas: controles, cámara y zoom
+            {
+                objectToAnimate: controls.current.target,
+                properties: {
+                    x: -2,
+                    y: 0.8,
+                    z: 0,
+                    duration: 0.8,
+                },
+                timelinePoint: 3,
+            },
+            {
+                objectToAnimate: camera.position,
+                properties: {
+                    x: -0.1,
+                    y: -0,
+                    z: 3,
+                    duration: 0.8,
+                },
+                timelinePoint: 3,
+            },
+            {
+                objectToAnimate: camera,
+                properties: {
+                    zoom: 1,
+                    duration: 0.8,
+                    onUpdate: () => {
+                        camera.updateProjectionMatrix();
+                    },
+                },
+                timelinePoint: 3.3,
+            },
+        ]
+        AnimationsData = [...AnimationsData, ...TiresAnimation]
         AnimationsData.map((animation) => {
             timeline.current.to(
                 animation.objectToAnimate,
