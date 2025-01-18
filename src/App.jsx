@@ -4,7 +4,6 @@ import Scene from './components/Scene'
 import Info from './components/Info'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
