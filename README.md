@@ -16,7 +16,9 @@ Una landing page interactiva que muestra un **modelo 3D** del Jetta Volkswagen 2
 - **Animaciones dinámicas**: Elementos animados que se activan al desplazarte por la página.  
 - **Diseño responsivo**: Adaptado para dispositivos móviles y de escritorio.  
 
-## 🚀 Instalación  
-1. Clona este repositorio:  
-   ```bash
-   git clone https://github.com/BrayanReynoso/landing-page-volkswagen-2019.git
+## 🚗 Landing Page - Volkswagen Jetta 2019
+
+Explora la experiencia interactiva de un modelo 3D del Jetta Volkswagen 2019 en una landing page que combina **React Three**, **GSAP**, y **React Fiber** para una navegación fluida y moderna.
+
+🌐 [Prueba la Landing Page aquí](https://brayanreynoso.github.io/landing-page-volkswagen-2019/)
+
